@@ -9,6 +9,7 @@
         border: none;
         background-color: transparent;
         padding: 0;
+        cursor: pointer;
     }
 }
 .logo {
@@ -32,3 +33,68 @@
         color: rgba(54, 56, 56, 0.9);
     }
 }
+
+.rightside-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 695px;
+    width: 100%;
+    background: #FFFFFF;
+    padding-top: 40px;
+    transition: all 1s;
+    box-shadow: -6px 1px 17px 0 #000;
+    &.rightside-menu--close {
+        transform: translateX(120%);
+    }
+    .rightside-menu__close {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        margin-left: 47px;
+        margin-bottom: 57px;
+    }
+    .rightside-menu__content {
+        max-width: 483px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .rightside-menu__logo {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    .rightside-menu__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+        color: $title_color;
+        padding-bottom: 17px;
+        margin-bottom: 17px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            max-width: 252px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            background: #6D7278;
+            height: 1px;
+        }
+    }
+    .rightside-menu__text {
+        font-size: 16px;
+        line-height: 27px;
+        color: #5A5A5A;
+        margin-bottom: 75px;
+    }
+    .rightside-menu__imege {
+        max-width: 483px;
+    }
+
+}
+

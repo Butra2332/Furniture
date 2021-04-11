@@ -1,0 +1,91 @@
+.new-collection {
+    text-align: center;
+    padding: 45px 0 105px 0;
+    .new-collection__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        color: $title_color;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 252px;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: #6D7278;
+        }
+    }
+    .new-collection__subtitle {
+        max-width: 720px;
+        margin: 0 auto 30px;
+        font-size: 16px;
+        line-height: 27px;
+        color: #5A5A5A;
+    }
+
+}
+.collection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    .collection__images {
+        min-height: 350px;
+        object-fit: cover;
+    }
+    .collection__item {
+        position: relative;
+        &:hover {
+            .collection__info {
+                opacity: 1;
+            }
+        }
+    }
+    .collection__info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(#fff, .6);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.7s all;
+    }
+    .collection__info-title {
+        @extend %title-font;
+        color: $title_color;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: #6D7278;
+
+        }
+    }
+    .collection__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+    }
+}
