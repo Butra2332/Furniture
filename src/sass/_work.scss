@@ -10,7 +10,7 @@
     }
     .work__items-box {
         display: flex;
-        align-items: start;
+        align-items: flex-end;
         border-bottom: 2px solid rgba($title_color, .7);
         position: relative;
         &::after {
@@ -50,12 +50,11 @@
         &::after {
             content: "";
             position: absolute;
-            left: -8px;
-            bottom: -80px;
-            width: 20px;
-            height: 2px;
+            left: 0;
+            bottom: 0px;
+            width: 2px;
+            height: 20px;
             background-color: rgba(54,56,56,0.7);
-            transform: rotate(90deg);
         }
     }
     .work__item--consultation,
@@ -63,7 +62,7 @@
         padding-bottom: 30px;
     }
     .work__item--measuring {
-        padding-top: 30px;
+        padding-top: 38px;
         margin-left: 306px;
         &::after {
             content: "";
