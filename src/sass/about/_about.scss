@@ -1,0 +1,46 @@
+.about {
+    .about__preview {
+        height: 400px;
+        background: url(../../img/about_bg1.jpg) center (center/cover) no-repeat;
+        text-align: center;
+        padding: 160px 0;
+        margin-top: -56px;
+    }
+    .about__preview-title {
+        @extend %title-font;
+        font-size: 60px;
+        line-height: 80px;
+        color: $title_color;
+    }
+    .about__content {
+        padding: 130px 0 40px 0;
+    }
+    .about__content-title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        color: $title_color;
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 1px;
+            background: #6D7278;
+        }
+    }
+    .about__content-text {
+        padding-left: 284px;
+        p {
+            font-size: 16px;
+            line-height: 27px;
+            color: #5A5A5A;
+            margin-bottom: 30px;
+        }
+    }
+    
+}

@@ -1,14 +1,22 @@
 @import "library/reset";
 @import "library/font";
 @import "library/variables";
-@import "header";
-@import "footer";
-@import "carousel";
-@import "new-collection";
-@import "decor";
-@import "work";
-@import "gallery";
-@import "blog-home";
+
+
+@import "index/header";
+@import "index/footer";
+@import "index/carousel";
+@import "index/new-collection";
+@import "index/decor";
+@import "index/work";
+@import "index/gallery";
+@import "index/blog-home";
+
+@import "about/about";
+
+
+
+
 
 * {font-family: 'Open sans', sans-serif;
     font-weight: 400;
@@ -40,4 +48,40 @@ body {
     max-width: 100%;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.menu__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: rgba($title_color, .7);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 1px;
+    }
+
+}
+.breadcrumbs {
+    background: rgba(#DFDFDF, .6);
+    padding: 13px 0 15px;
+    .breadcrumbs__list {
+        display: flex;
+    }
+    .breadcrumbs__item::after {
+        content: '/';
+        margin-left: -4px;
+        margin-right: 4px;
+    }
+    .breadcrumbs__item:last-child::after {
+        display: none;
+    }
+    .breadcrumbs__link {
+        font-size: 14px;
+        line-height: 28px;
+        color: #5A5A5A;
+    }
 }
