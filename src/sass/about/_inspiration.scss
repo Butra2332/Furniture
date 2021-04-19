@@ -1,0 +1,74 @@
+.inspiration {
+    padding-top: 100px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../img/inspiration_bg.png);
+        height: 362px;
+        z-index: -5;
+    }
+    .inspiration__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inspiration__image {
+        margin-right: 78px;
+        margin-left: -230px;
+    }
+    .inspiration__content {
+        width: 825px;
+    }
+    .inspiration__title {
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px; 
+        color: $title_color; 
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 200px;
+            height: 2px;
+            border-radius: 1px;
+            background: #6D7278;
+        }
+    }
+    .inspiration__text {
+        font-size: 16px;
+        line-height: 27px;
+        color: $title_color;
+        margin-bottom: 34px;
+    }
+    .inspiration__item {
+        margin-bottom: 33px;
+    }
+    .inspiration__item-content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        border-bottom: 2px solid #fff;
+        border-radius: 4px;
+    }
+    .inspiration__item-text, .inspiration__item-num {
+        @extend %title-font;
+        color: $title_color;
+        font-size: 16px;
+        line-height: 23px
+    }
+    .inspiration__line {
+        height: 2px;
+        background-color: $title_color;
+        border-radius: 4px;
+        margin-top: -2px;
+    }
+}

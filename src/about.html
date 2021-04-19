@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture</title>
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <link  href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -79,12 +80,103 @@
                     </div>
                     </div>
                 </div>
-                <div class="about__vid">
-                    <a class="about__vid-play" href="play_button">
-                        <img class="about__vid-img" src="" alt="#">
-                    </a>
+                <div class="about__video"> 
+                    <a class="about__play" data-fancybox href="https://youtu.be/pMzVHSBNafk">
+                        <img class="about__img" src="icon/play.svg" alt="play">
+                    </a>  
                 </div>
             </section>
+            <section class="inspiration">
+                <div class="container-fluid">
+                    <div class="inspiration__inner">
+                        <img class="inspiration__image" src="img/inspiration_chair.png" alt="image">
+                        <div class="inspiration__content">
+                            <h2 class="inspiration__title">Our Inspiration in details</h2>
+                            <p class="inspiration__text">Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth helvetica jean shorts. Fanny pack church-key cornhole, banh mi thundercats gochujang keytar.</p>
+                            <ul class="inspiration__list">
+                                <li class="inspiration__item">
+                                    <div class="inspiration__item-content">
+                                        <p class="inspiration__item-text">Design and technical drawings</p>
+                                        <div class="inspiration__item-num">80%</div>
+                                    </div>
+                                    <div class="inspiration__line" style="width: 80%;" ></div>
+                                </li>
+                                <li class="inspiration__item">
+                                    <div class="inspiration__item-content">
+                                        <p class="inspiration__item-text">Measurments</p>
+                                        <div class="inspiration__item-num">70%</div>
+                                    </div>
+                                    <div class="inspiration__line" style="width: 70%;" ></div>
+                                </li>
+                                <li class="inspiration__item">
+                                    <div class="inspiration__item-content">
+                                        <p class="inspiration__item-text">Furniture functionality analysis</p>
+                                        <div class="inspiration__item-num">75%</div>
+                                    </div>
+                                    <div class="inspiration__line" style="width: 75%;" ></div>
+                                </li>
+                                <li class="inspiration__item">
+                                    <div class="inspiration__item-content">
+                                        <p class="inspiration__item-text">Interior visualization</p>
+                                        <div class="inspiration__item-num">40%</div>
+                                    </div>
+                                    <div class="inspiration__line" style="width: 40%;" ></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <div class="partners">
+                <div class="container-fluid">
+                    <div class="partners__items">
+                        <img class="partners__item" src="img/partners/partner_1.svg" alt="imeges">
+                        <img class="partners__item" src="img/partners/partner_2.svg" alt="imeges">
+                        <img class="partners__item" src="img/partners/partner_1.svg" alt="imeges">
+                        <img class="partners__item" src="img/partners/partner_2.svg" alt="imeges">
+                        <img class="partners__item" src="img/partners/partner_1.svg" alt="imeges">
+                    </div>
+                </div>
+
+            </div>
+            <div class="collection">
+                <a class="collection__item" href="#">
+                    <img class="collection__images" src="img/collection/about_1.jpg" alt="images">
+                    <div class="collection__info">
+                        <h4 class="collection__info-title">Truffaut literally trust</h4>
+                        <p class="collection__text">Living room furntiture | Chair</p>
+                    </div>
+                </a>
+                <a class="collection__item" href="#">
+                    <img class="collection__images" src="img/collection/about_2.jpg" alt="images">
+                    <div class="collection__info">
+                        <h4 class="collection__info-title">Truffaut literally trust</h4>
+                        <p class="collection__text">Living room furntiture | Chair</p>
+                    </div>
+                </a>
+                <a class="collection__item" href="#">
+                    <img class="collection__images" src="img/collection/about_3.jpg" alt="images">
+                    <div class="collection__info">
+                        <h4 class="collection__info-title">Truffaut literally trust</h4>
+                        <p class="collection__text">Living room furntiture | Chair</p>
+                    </div>
+                </a>
+                <a class="collection__item" href="#">
+                    <img class="collection__images" src="img/collection/about_4.jpg" alt="images">
+                    <div class="collection__info">
+                        <h4 class="collection__info-title">Truffaut literally trust</h4>
+                        <p class="collection__text">Living room furntiture | Chair</p>
+                    </div>
+                </a>
+                <a class="collection__item" href="#">
+                    <img class="collection__images" src="img/collection/about_5.jpg" alt="images">
+                    <div class="collection__info">
+                        <h4 class="collection__info-title">Truffaut literally trust</h4>
+                        <p class="collection__text">Living room furntiture | Chair</p>
+                    </div>
+                </a>
+            </div>
         </div>
         <fooret class="footer">
             <div class="footer__content">
@@ -145,6 +237,7 @@
     </div>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

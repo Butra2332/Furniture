@@ -19,6 +19,9 @@ $(function () {
             filter: '.living'
         }
     });
+    $('[data-fancybox]').fancybox({
+        protect: true
+    });
 });
 
 

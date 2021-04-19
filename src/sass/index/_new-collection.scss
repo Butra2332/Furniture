@@ -1,6 +1,6 @@
 .new-collection {
     text-align: center;
-    padding: 45px 0 105px 0;
+    padding: 45px 0 35px 0;
     .new-collection__title {
         @extend %title-font;
         font-size: 36px;
@@ -34,6 +34,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 30px;
+    padding-bottom: 70px;
     .collection__images {
         min-height: 350px;
         object-fit: cover;
