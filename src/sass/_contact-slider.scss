@@ -1,0 +1,68 @@
+.contact-slider {
+    padding: 0 25px 102px 25px;
+    .contact-slider__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-slider__link {
+        position: relative;
+        margin-bottom: 20px;
+        &:hover {
+            .contact-slider__title {
+                opacity: 1;
+            }
+        }
+    }
+    .contact-slider__img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+    }
+    .contact-slider__title {
+        transition: 0.5s all;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(#fff, .6);
+        color: $title_color;
+        @extend %title-font;
+        line-height: 22px;
+        font-size: 16px;
+        padding: 0 5px;
+        text-align: center;
+        opacity: 0;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            background-color: $title_color;
+            width: 8px;
+            height: 8px;
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+            font-size: 0;
+        }
+        li {
+            margin: 0 15px;
+        }
+        li.slick-active {
+            button {
+                background-color: #FFEF35;
+            }
+        }
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

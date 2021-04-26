@@ -25,26 +25,6 @@
         margin-bottom: 16px;
         width: 476px;
     }
-    .footer__info-email {
-        display: inline-block;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 28px;
-        color: #363838;
-        margin-bottom: 22px;
-        padding-left: 30px;
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            background-image: url(../icon/envelope.svg);
-            left: 0px;
-            width: 16px;
-            height: 12px;
-            top: 9px;
-        }
-    }
     .footer__form {
         display: flex;
     }
