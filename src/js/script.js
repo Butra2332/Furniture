@@ -19,6 +19,12 @@ $(function () {
         slideToScroll: 1,
         arrows: false
     });
+
+    $('.article-slider__box').slick({ 
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/left_arrow.svg" alt="arrow"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/right_arrow.svg" alt="arrow"></button>',
+    });
+
     var mixer = mixitup('.gallery__inner', {
         load: {
             filter: '.living'
