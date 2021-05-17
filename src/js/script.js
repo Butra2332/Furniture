@@ -5,6 +5,14 @@ $(function () {
     $('.rightside-menu__close').on('click', function() {
         $('.rightside-menu').addClass('rightside-menu--close');
     });
+
+
+    $('.header__hamburger-menu').on('click', function() {
+        $('.menu').toggleClass('menu--open');
+    });
+    
+
+
     $('.carousel__slider').slick({
         dots: true,
         slidesToShow: 1,
