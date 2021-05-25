@@ -29,7 +29,7 @@ html, body {
 body {
     color: #5A5A5A;
     overflow-x: hidden;
-    min-height: 320px;
+    min-width: 300px;
 }
 
 .wrapper {
@@ -74,11 +74,15 @@ body {
     z-index: 0;
     .breadcrumbs__list {
         display: flex;
+        overflow-x: auto;
+    }
+    .breadcrumbs__item {
+        position: relative;
+        padding-right: 8px;
     }
     .breadcrumbs__item::after {
         content: '/';
-        margin-left: -4px;
-        margin-right: 4px;
+        position: absolute;
     }
     .breadcrumbs__item:last-child::after {
         display: none;
@@ -93,6 +97,9 @@ body {
 .map {
     margin-top: -53px;
     margin-bottom: 55px;
+    iframe {
+        height: 578px;
+    }
 }
 .info-email {
     display: inline-block;

@@ -32,7 +32,7 @@
         font-size: 16px;
         line-height: 28px;
         color: #A1A1A1;
-        width: 824px;
+        max-width: 824px;
         margin: 0 auto;
         margin-bottom: 10px;
     }
@@ -48,21 +48,34 @@
         margin-bottom: 16px;
     }
     .contact__input {
-        width: 407px;
-        height: 40px;
-        padding: 6px 298px 6px 17px;
+        width: 49%;
+        padding: 6px 17px;
         border-radius: 20px;
         margin-bottom: 13px;
         border: 1px solid #DFDFDF;
+        &::placeholder {    
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            font-family: 'Open sans', sans-serif;
+            color: #A1A1A1;
+        }
     }
     .contact__textarea {
-        width: 825px;
-        height: 125px;
-        border-radius: 24px;
+        width: 99%;
         border: 1px solid #DFDFDF;
-        padding: 14px 683px 83px 17px;
+        border-radius: 24px;
         resize: none;
         margin-bottom: 20px;
+        padding: 14px 17px;
+        min-height: 125px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            font-family: 'Open sans', sans-serif;
+            color: #A1A1A1;
+        }
     }
     .contact__button {
         width: 181px;
